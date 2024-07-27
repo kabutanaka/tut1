@@ -17,10 +17,12 @@ public class Greeter {
   }
 
   public static void main(String[] args) {
-    String language = args[0];
-    String country = args[1];
-    String name = args[2];
+    String[] Array = {"en", "NZ", "Shogo"};
+    String language = Array[0];
+    String country = Array[1];
+    String name = Array[2];
     Greeter greeter = new Greeter(language, country, name);
     System.out.println(greeter.sayHello());
   }
+
 }
